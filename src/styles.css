@@ -1,0 +1,84 @@
+/* App.css */
+.App {
+  text-align: center;
+  background-color: #f8f9fa; /* Cor de fundo clara */
+  color: #333; /* Cor de texto principal */
+  font-family: "Arial", sans-serif; /* Fonte padrão */
+}
+
+.navbar, .footer {
+  background-image: linear-gradient(to right, #f12711, #f5af19); /* Degradê laranja-vermelho */
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin: 1rem;
+  transition: transform 0.2s; /* Animação ao passar o mouse */
+}
+
+.product:hover {
+  transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.logo {
+  max-width: 50px; /* ou qualquer tamanho que você preferir */
+  height: auto; /* mantém a proporção da imagem */
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.dark-mode .navbar,
+.dark-mode .footer {
+  background-image: linear-gradient(to right, #414345, #232526); /* Degradê para o modo escuro */
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.content {
+  flex: 1; /* Ocupa todo o espaço disponível */
+}
+
+.footer {
+  background-image: linear-gradient(to right, #f12711, #f5af19); /* Degradê laranja-vermelho */
+  color: white;
+  padding: 1rem;
+  width: 100%;
+}
+
+.toggle-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-image: linear-gradient(to right, #f5af19 ,#f12711); /* Degradê laranja-vermelho */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background-image: linear-gradient(to right, #e94057, #f27121); /* Degradê mais escuro ao passar o mouse */
+}
+
+.dark-mode .toggle-btn:hover {
+  background-image: linear-gradient(to right, #232526, #414345); /* Degradê ao passar o mouse no modo escuro */
+}
